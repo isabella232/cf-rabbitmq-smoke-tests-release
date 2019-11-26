@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"rabbitmq-smoke-tests/tests/helper"
+	"github.com/pivotal-cf/cf-rabbitmq-smoke-tests-release/src/rabbitmq-smoke-tests/tests/helper"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
