@@ -8,7 +8,10 @@ mkdir -p ${REPO_TARGET_DIR}
 
 cp -aR ${PACKAGE_NAME}/* ${REPO_TARGET_DIR}
 
+export GOPATH="${BOSH_INSTALL_TARGET}"
 export GOBIN="${BOSH_INSTALL_TARGET}/bin"
+export PATH="${PATH}:/var/vcap/packages/cf-rabbitmq-smoke-tests-golang/bin"
+export GOCACHE=$PWD/cache
 
 pushd $REPO_TARGET_DIR
   go install -mod=vendor
